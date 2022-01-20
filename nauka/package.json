@@ -1,0 +1,21 @@
+{
+    "name": "codeceptjs-tests",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "local": "codeceptjs run --steps",
+        "local:headless": "HEADLESS=true codeceptjs run --steps",
+        "local:ui": "codecept-ui --app",
+        "local:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "local:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "local:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+    },
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.6.2",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/ui": "^0.4.6",
+        "codeceptjs": "^3.0.7",
+        "playwright": "^1.12.3",
+        "puppeteer": "^10.1.0"
+    }
+}
